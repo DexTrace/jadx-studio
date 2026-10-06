@@ -195,6 +195,8 @@ src/main/java/com/jadxstudio/
 
 ## License & attribution
 
+JADX Studio is released under the **Apache License 2.0** — see [LICENSE](LICENSE).
+
 This project bundles [jadx](https://github.com/skylot/jadx) (Apache-2.0) as a dependency and credits it
 as the decompilation engine. Native analysis integrates with **radare2**/**rizin** and **Ghidra**, which
 are optional and detected at runtime.
