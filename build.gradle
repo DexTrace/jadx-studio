@@ -26,3 +26,10 @@ application {
 tasks.named('test') {
     enabled = false
 }
+
+// README states "Requires JDK 17+". Without this the compiler emits bytecode for
+// whichever JDK happens to run Gradle, so a build on JDK 11 would silently
+// produce class files that fail on the documented minimum.
+tasks.withType(JavaCompile).configureEach {
+    options.release = 17
+}
