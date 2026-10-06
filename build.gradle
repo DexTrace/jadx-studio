@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation 'io.github.skylot:jadx-core:1.5.0'
+    implementation 'io.github.skylot:jadx-dex-input:1.5.0'
+    implementation 'io.github.skylot:jadx-java-input:1.5.0'
+    implementation 'io.github.skylot:jadx-smali-input:1.5.0'
+    implementation 'com.formdev:flatlaf:3.4.1'
+    implementation 'org.slf4j:slf4j-simple:2.0.12'
+    // JSON parsing for native analysis backends (radare2/rizin output)
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+application {
+    mainClass = project.findProperty('mainClass') ?: 'com.jadxstudio.Main'
+}
+
+tasks.named('test') {
+    enabled = false
+}
