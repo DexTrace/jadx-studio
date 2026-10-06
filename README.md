@@ -112,6 +112,7 @@ build/install/jadx-studio/bin/jadx-studio.bat      # Windows
 | `Ctrl+U` | Find usages |
 | `Ctrl+F` | Search all text |
 | `Ctrl+W` | Close current tab |
+| `Ctrl+Q` | Exit |
 | `Alt+←` / `Alt+→` | Back / Forward |
 
 ---
